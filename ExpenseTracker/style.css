@@ -1,0 +1,201 @@
+/* === Global Reset & Base === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* === Navigation Bar === */
+.nav-bar {
+    background: linear-gradient(to right, #111, #222);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #0fffcf;
+}
+
+/* === Hero Section === */
+.hero {
+    background: linear-gradient(to right, #1e1e1e, #111);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2b2b2b;
+    color: #f5f5f5;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #a67aff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+/* === Card Styling === */
+.card {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+.card-header {
+    background: linear-gradient(to right, #a020f0, #e100ff);
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.card-body {
+    background-color: #141414;
+    padding: 1.5rem;
+    border-radius: 0 0 16px 16px;
+}
+
+/* === Buttons === */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: #8a60ff;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #a67aff;
+}
+
+.btn-danger {
+    background-color: #ff4e4e;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #ff2d2d;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+/* === Form Inputs === */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #a67aff;
+    outline: none;
+}
+
+.form-label {
+    color: #ccc;
+    font-weight: 600;
+}
+
+/* === Table Styling (Readable) === */
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+
+thead {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tbody tr {
+    background-color: #2b2b2b;
+    color: #eeeeee;
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #333333;
+}
+
+tbody tr:hover {
+    background-color: #3b3b3b;
+}
+
+th, td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #444;
+}
+
+/* === Modal Styling === */
+.modal-content {
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    color: #f0f0f0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+    }
+}
